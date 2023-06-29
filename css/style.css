@@ -1,0 +1,27 @@
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: auto;
+    height: 300px;
+}
+
+.odin-foods{
+    width: 980px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+div.card{
+    display: inline-block;
+    margin: 10px;
+}
