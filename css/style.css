@@ -1,27 +1,84 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-html{
+html {
     box-sizing: border-box;
 }
 
-h1{
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
     text-align: center;
 }
 
-img{
+img {
     width: auto;
     height: 300px;
 }
 
-.odin-foods{
-    width: 980px;
+div a{
+    background-color: hsl(14, 82%, 46%);
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+}
+
+div.card {
+    display: inline-block;
+    margin: 10px;
+    height: auto;
+}
+
+.odin-foods {
+    width: 100%;
     margin: 0px auto;
     text-align: center;
 }
 
-div.card{
-    display: inline-block;
-    margin: 10px;
+.food-label {
+    text-align: left;
+    padding: 5px;
+}
+
+.food-num,
+.food-name {
+    margin-right: 5px;
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.food-num {
+    font-weight: bold;
+}
+
+.food-name {
+    padding-left: 5px;
+    border-left: 1px black solid;
+}
+
+.description {
+    padding: 5px;
+    text-align: left;
+    word-wrap: break-word;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 22px;
+}
+
+.short {
+    width: 225px;
+}
+
+.long {
+    width: 450px;
+}
+
+.button-container {
+    text-align: right;
+    padding: 5px;
+    margin-top: 2px;
 }
