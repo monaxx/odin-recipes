@@ -15,6 +15,12 @@ body {
 
 h1 {
     text-align: center;
+    margin-bottom: 0px;
+}
+
+h2 {
+    text-decoration: underline;
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
@@ -22,24 +28,36 @@ img {
     height: 300px;
 }
 
-div a{
+div a {
     background-color: hsl(14, 82%, 46%);
     text-decoration: none;
     color: #fff;
     padding: 8px 12px;
 }
 
-div.card {
+div.card,
+div.food-pic-container,
+div.food-details-container {
     display: inline-block;
     margin: 10px;
-    height: auto;
 }
 
-.odin-foods {
-    width: 100%;
+div.food-pic-container {
+    margin-right: 10px;
+}
+
+div.food-details-container {
     margin: 0px auto;
+    vertical-align: top;
+    text-align: left;
+    width: 70%;
+}
+
+.odin-foods,
+div.recipe-container {
     text-align: center;
 }
+
 
 .food-label {
     text-align: left;
@@ -81,4 +99,24 @@ div.card {
     text-align: right;
     padding: 5px;
     margin-top: 2px;
+}
+
+.crumbs ol {
+    list-style-type: none;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb::after {
+    content: '>';
+    display: inline-block;
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0px 3px;
+}
+
+.crumbs ol {
+    margin: 2px 0px;
 }
